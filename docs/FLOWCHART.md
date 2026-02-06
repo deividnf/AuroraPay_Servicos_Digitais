@@ -5,36 +5,36 @@ Este documento ilustra o fluxo de dados e decisão do Sistema de Cobrança Auror
 ```mermaid
 flowchart TD
     %% Nós de Início e Dados
-    Start([Início do Processo]) --> ReadExcel[Leitura de Dados Excel]
+    Start([Início do Processo]) --> ReadExcel["Leitura de Dados Excel"]
     ReadExcel --> AdapterExcel[ExcelAdapter]
     
     subgraph DataNormalization [Normalização de Dados]
         AdapterExcel --> Sheets{Leitura de Abas}
-        Sheets -->|Clientes| DataCli[Dados Cadastrais]
-        Sheets -->|Faturas| DataFat[Dados Financeiros]
-        Sheets -->|Itens| DataItens[Detalhamento de Serviços]
-        DataCli & DataFat & DataItens --> Merge[Merge Relacional (Invoice + Items)]
+        Sheets -->|Clientes| DataCli["Dados Cadastrais"]
+        Sheets -->|Faturas| DataFat["Dados Financeiros"]
+        Sheets -->|Itens| DataItens["Detalhamento de Serviços"]
+        DataCli & DataFat & DataItens --> Merge["Merge Relacional (Invoice + Items)"]
     end
     
-    Merge --> InvoiceList[Lista de Faturas (Objetos)]
+    Merge --> InvoiceList["Lista de Faturas (Objetos)"]
     InvoiceList --> LoopStart{Para cada Fatura}
     
     %% Loop de Processamento
     subgraph ProcessingStrategy [Lógica de Cobrança]
-        LoopStart --> CalcDates[Calcular Delta de Dias]
+        LoopStart --> CalcDates["Calcular Delta de Dias"]
         CalcDates --> CheckRule{Verificar Regra}
         
-        CheckRule -->|Delta = -5| RuleD_5[Regra D-5: Lembrete]
-        CheckRule -->|Delta = 0| RuleD0[Regra D0: Vencimento]
-        CheckRule -->|Delta = +3| RuleD3[Regra D+3: Atraso]
+        CheckRule -->|Delta = -5| RuleD_5["Regra D-5: Lembrete"]
+        CheckRule -->|Delta = 0| RuleD0["Regra D0: Vencimento"]
+        CheckRule -->|Delta = 3| RuleD3["Regra D+3: Atraso"]
         CheckRule -->|Outros| Skip[Ignorar Fatura]
     end
     
     %% Validação e Segurança
     RuleD_5 & RuleD0 & RuleD3 --> TestCheck{Modo Teste?}
     
-    TestCheck -->|NÃO| Idempotency[Verificar Log Diário]
-    TestCheck -->|SIM| BypassLog[Ignorar Histórico]
+    TestCheck -->|NÃO| Idempotency["Verificar Log Diário"]
+    TestCheck -->|SIM| BypassLog["Ignorar Histórico"]
     
     Idempotency -->|Já executado| StopAction[Abortar Ação]
     Idempotency -->|Não executado| SendAction
@@ -42,15 +42,15 @@ flowchart TD
     
     %% Ação de Envio
     subgraph ActionExecution [Execução de Ação]
-        SendAction[EmailAdapter] --> TplSelect[Selecionar Template HTML]
-        TplSelect --> GenTable[Gerar Tabela de Itens]
-        GenTable --> ReplaceVars[Substituir Variáveis]
-        ReplaceVars --> SMTP[Disparo SMTP (Gmail)]
+        SendAction[EmailAdapter] --> TplSelect["Selecionar Template HTML"]
+        TplSelect --> GenTable["Gerar Tabela de Itens"]
+        GenTable --> ReplaceVars["Substituir Variáveis"]
+        ReplaceVars --> SMTP["Disparo SMTP (Gmail)"]
     end
     
-    SMTP -->|Sucesso| LogSuccess[Gravar Log: SUCCESS]
-    SMTP -->|Falha| LogError[Gravar Log: ERROR]
-    Skip --> LogSkip[Gravar Log: SKIPPED]
+    SMTP -->|Sucesso| LogSuccess["Gravar Log: SUCCESS"]
+    SMTP -->|Falha| LogError["Gravar Log: ERROR"]
+    Skip --> LogSkip["Gravar Log: SKIPPED"]
     StopAction --> LoopStart
     
     LogSuccess & LogError & LogSkip --> LoopStart
