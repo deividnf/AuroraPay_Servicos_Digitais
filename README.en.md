@@ -1,5 +1,8 @@
 # AuroraPay Billing Email System 🚀
 
+> [!NOTE]
+> **Brazilian Project 🇧🇷**: This system was originally developed in Portuguese-BR to serve the local simplified billing management market.
+
 <p align="center">
   <a href="README.md">🇧🇷 Português</a> | 
   <a href="README.en.md">🇺🇸 English</a> | 
@@ -8,18 +11,35 @@
 
 ---
 
-![Badge Status](https://img.shields.io/badge/Status-Completed-success) ![Badge Python](https://img.shields.io/badge/Python-3.8%2B-blue) ![Badge License](https://img.shields.io/badge/License-MIT-green)
+## 🧭 Navigation Menu
+- [🎯 Project Objective](#-project-objective)
+- [👥 Target Audience](#-target-audience)
+- [📈 Benefits and Gains](#-benefits-and-gains)
+- [⚡ Main Features](#-main-features)
+- [🖼️ Template Visualization](#-template-visualization)
+- [🚀 How to Use](#-how-to-use)
+- [📚 Full Documentation](#-full-documentation)
 
-> [!NOTE]
-> **Brazilian Project 🇧🇷**: This system was originally developed in Portuguese-BR to serve the local simplified billing management market.
-
-Automated system for sending invoices and billing reminders via email, focused on small businesses that use spreadsheets for financial management.
+---
 
 ## 🎯 Project Objective
 This project was developed for a **Technical Product Manager Portfolio**, demonstrating:
 *   Clean Architecture.
 *   Process Automation (RPA).
 *   Standardized Technical Documentation.
+
+## 👥 Target Audience
+This solution was designed for:
+*   **Small and Medium Enterprises (SMEs)**: Who still manage their billings via spreadsheets and seek to automate customer contact.
+*   **Financial Departments**: That need to reduce the manual effort of sending reminders and billings.
+*   **IT Professionals / Product Managers**: Who seek a modular base structure to scale financial RPA solutions.
+
+## 📈 Benefits and Gains
+Adopting this automation structure provides:
+1.  **Reduction of Delinquency**: Preventive reminders (D-5) increase the on-time payment rate.
+2.  **Operational Time Savings**: Eliminates the need for manual one-by-one email sending.
+3.  **Brand Standardization**: HTML templates ensure professional and uniform communication.
+4.  **Scalability**: Modular structure that allows easy addition of new channels (WhatsApp, SMS) or Payment Gateways.
 
 ---
 

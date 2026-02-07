@@ -1,5 +1,8 @@
 # Sistema de E-mail para Cobrança - AuroraPay 🚀
 
+> [!NOTE]
+> **Projeto Brasileiro 🇧🇷**: Este é um sistema desenvolvido originalmente em Português-BR para atender o mercado local de gestão de cobrança simplificada.
+
 <p align="center">
   <a href="README.md">🇧🇷 Português</a> | 
   <a href="README.en.md">🇺🇸 English</a> | 
@@ -8,18 +11,35 @@
 
 ---
 
-![Badge Status](https://img.shields.io/badge/Status-Completed-success) ![Badge Python](https://img.shields.io/badge/Python-3.8%2B-blue) ![Badge License](https://img.shields.io/badge/License-MIT-green)
+## 🧭 Menu de Navegação
+- [🎯 Objetivo do Projeto](#-objetivo-do-projeto)
+- [👥 Público-Alvo](#-público-alvo)
+- [📈 Benefícios e Ganhos](#-benefícios-e-ganhos)
+- [⚡ Funcionalidades](#-funcionalidades-principais)
+- [🖼️ Visualização dos Templates](#-visualização-dos-templates)
+- [🚀 Como Usar](#-como-usar)
+- [📚 Documentação Completa](#-documentação-completa)
 
-> [!NOTE]
-> **Projeto Brasileiro 🇧🇷**: Este é um sistema desenvolvido originalmente em Português-BR para atender o mercado local de gestão de cobrança simplificada.
-
-Sistema automatizado para envio de faturas e lembretes de cobrança via e-mail, focado em pequenas empresas que utilizam planilhas para gestão financeira.
+---
 
 ## 🎯 Objetivo do Projeto
 Este projeto foi desenvolvido para **Portfólio de um Technical Product Manager**, demonstrando:
 *   Arquitetura Limpa (Clean Architecture).
 *   Automação de Processos (RPA).
 *   Documentação Técnica Padronizada.
+
+## 👥 Público-Alvo
+Esta solução foi desenhada para:
+*   **Pequenas e Médias Empresas (PMEs)**: Que ainda gerenciam suas cobranças via planilhas e buscam automatizar o contato com o cliente.
+*   **Departamentos Financeiros**: Que precisam reduzir o esforço manual de envio de lembretes e cobranças.
+*   **Profissionais de TI/Product Managers**: Que buscam uma estrutura base modular para escalar soluções de RPA financeiro.
+
+## 📈 Benefícios e Ganhos
+A adoção desta estrutura de automação proporciona:
+1.  **Redução de Inadimplência**: Lembretes preventivos (D-5) aumentam a taxa de pagamento pontual.
+2.  **Economia de Tempo Operacional**: Elimina a necessidade de envio manual de e-mails um a um.
+3.  **Padronização da Marca**: Templates HTML garantem uma comunicação profissional e uniforme.
+4.  **Escalabilidade**: Estrutura modular que permite a fácil adição de novos canais (WhatsApp, SMS) ou Gateways de Pagamento.
 
 ---
 

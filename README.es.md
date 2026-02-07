@@ -1,5 +1,8 @@
 # Sistema de Correo Electrónico para Cobro - AuroraPay 🚀
 
+> [!NOTE]
+> **Proyecto Brasileño 🇧🇷**: Este es un sistema desarrollado originalmente em Portugués-BR para atender al mercado local de gestión de cobro simplificado.
+
 <p align="center">
   <a href="README.md">🇧🇷 Português</a> | 
   <a href="README.en.md">🇺🇸 English</a> | 
@@ -10,16 +13,36 @@
 
 ![Badge Status](https://img.shields.io/badge/Status-Completed-success) ![Badge Python](https://img.shields.io/badge/Python-3.8%2B-blue) ![Badge License](https://img.shields.io/badge/License-MIT-green)
 
-> [!NOTE]
-> **Proyecto Brasileño 🇧🇷**: Este es un sistema desarrollado originalmente em Portugués-BR para atender al mercado local de gestión de cobro simplificado.
 
-Sistema automatizado para el envío de facturas y recordatorios de cobro por correo electrónico, enfocado en pequeñas empresas que utilizan hojas de cálculo para la gestión financiera.
+## 🧭 Menú de Navegación
+- [🎯 Objetivo del Proyecto](#-objetivo-del-proyecto)
+- [👥 Público Objetivo](#-público-objetivo)
+- [📈 Beneficios y Ganancias](#-beneficios-y-ganancias)
+- [⚡ Funcionalidades](#-funcionalidades-principais)
+- [🖼️ Visualización de Plantillas](#-visualización-de-plantillas)
+- [🚀 Cómo Usar](#-cómo-usar)
+- [📚 Documentación Completa](#-documentación-completa)
+
+---
 
 ## 🎯 Objetivo del Proyecto
 Este proyecto fue desarrollado para un **Portafolio de Technical Product Manager**, demostrando:
 *   Arquitectura Limpia (Clean Architecture).
 *   Automatización de Procesos (RPA).
 *   Documentación Técnica Estandarizada.
+
+## 👥 Público Objetivo
+Esta solución fue diseñada para:
+*   **Pequeñas y Medianas Empresas (PYMEs)**: Que aún gestionan sus cobros mediante hojas de cálculo y buscan automatizar el contacto con el cliente.
+*   **Departamentos Financieros**: Que necesitan reducir el esfuerzo manual de envío de recordatorios y cobros.
+*   **Profesionales de TI / Product Managers**: Que buscan una estructura base modular para escalar soluciones de RPA financiero.
+
+## 📈 Beneficios y Ganancias
+La adopción de esta estructura de automatización proporciona:
+1.  **Reducción de Morosidad**: Los recordatorios preventivos (D-5) aumentan la tasa de pago a tiempo.
+2.  **Ahorro de Tiempo Operativo**: Elimina la necesidad de envío manual de correos uno a uno.
+3.  **Estandarización de Marca**: Las plantillas HTML garantizan una comunicación profesional y uniforme.
+4.  **Escalabilidad**: Estructura modular que permite la fácil adición de nuevos canales (WhatsApp, SMS) o Pasarelas de Pago.
 
 ---
 
