@@ -24,6 +24,15 @@ Este projeto foi desenvolvido para **Portfólio de um Technical Product Manager*
 
 ---
 
+## 🖼️ Visualização dos Templates
+Veja como os e-mails são entregues aos clientes:
+
+| 🗓️ Lembrete (D-5) | ✅ Vencimento (D0) | ⚠️ Atraso (D+3) |
+| :---: | :---: | :---: |
+| ![Lembrete](templates/img/antecipado.png) | ![Vencimento](templates/img/vencida.png) | ![Atraso](templates/img/atrasada.png) |
+
+---
+
 ## 🔄 Fluxo de Processamento
 
 ```mermaid
