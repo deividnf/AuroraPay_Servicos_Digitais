@@ -1,6 +1,17 @@
 # Sistema de E-mail para Cobrança - AuroraPay 🚀
 
+<p align="center">
+  <a href="README.md">🇧🇷 Português</a> | 
+  <a href="README.en.md">🇺🇸 English</a> | 
+  <a href="README.es.md">🇪🇸 Español</a>
+</p>
+
+---
+
 ![Badge Status](https://img.shields.io/badge/Status-Completed-success) ![Badge Python](https://img.shields.io/badge/Python-3.8%2B-blue) ![Badge License](https://img.shields.io/badge/License-MIT-green)
+
+> [!NOTE]
+> **Projeto Brasileiro 🇧🇷**: Este é um sistema desenvolvido originalmente em Português-BR para atender o mercado local de gestão de cobrança simplificada.
 
 Sistema automatizado para envio de faturas e lembretes de cobrança via e-mail, focado em pequenas empresas que utilizam planilhas para gestão financeira.
 
@@ -79,11 +90,11 @@ SMTP_PASSWORD=senha_app_google
 ---
 
 ## 📚 Documentação Completa
-Acesse a pasta `docs/` para detalhes técnicos:
-- 🏗️ **[Arquitetura do Sistema](docs/ARCHITECTURE.md)**: Visão técnica e decisões de design.
-- 🔀 **[Fluxograma Detalhado](docs/FLOWCHART.md)**: Diagrama visual do processo de decisão.
-- 📋 **[Requisitos](docs/REQUIREMENTS.md)**: Lista de requisitos funcionais e não funcionais.
-- 📖 **[Manual Operacional (POP)](docs/POP.md)**: Guia passo-a-passo para execução e operação.
+Acesse a pasta `docs/pt-br/` para detalhes técnicos:
+- 🏗️ **[Arquitetura do Sistema](docs/pt-br/ARCHITECTURE.md)**: Visão técnica e decisões de design.
+- 🔀 **[Fluxograma Detalhado](docs/pt-br/FLOWCHART.md)**: Diagrama visual do processo de decisão.
+- 📋 **[Requisitos](docs/pt-br/REQUIREMENTS.md)**: Lista de requisitos funcionais e não funcionais.
+- 📖 **[Manual Operacional (POP)](docs/pt-br/POP.md)**: Guia passo-a-passo para execução e operação.
 
 ---
 
